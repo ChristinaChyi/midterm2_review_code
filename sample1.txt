@@ -4,3 +4,4 @@ align
 Store
 Alias
 student A
+A grade on midterm 2
