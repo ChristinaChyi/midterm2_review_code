@@ -18,9 +18,22 @@ void nameOfHeavierPet(Pet *p1, Pet *p2){
 	else cout << "same weight" << endl;
 }
 
+int numCats(Pet pets[], int length){
+	int count = 0;
+	for(int i =0; i < length; i++){
+		if(pets[i].species == "cat") count++;
+	}
+	return count;
+}
+
+
 int main(){
 
+	Pet pets[] = { {"Buddy", "dog", 34.5}, {"Snowball", "cat", 10.2}, {"Oreo", "cat", 8.7} };
+	cout << "name of the heavier pet between Buddy and Snowball: ";
+	nameOfHeavierPet(pets,pets+1);
 
+	cout << "\n\nNumber of cats: " << numCats(pets, 3) << endl;
 
 	return 0;
 }
