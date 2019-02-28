@@ -33,7 +33,7 @@ int main(){
 	cout << "name of the heavier pet between Buddy and Snowball: ";
 	nameOfHeavierPet(pets,pets+1);
 
-	cout << "\n\nNumber of cats: " << numCats(pets, 3) << endl;
+	cout << "\nNumber of cats: " << numCats(pets, 3) << endl;
 
 	return 0;
 }
